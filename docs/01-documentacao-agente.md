@@ -3,18 +3,15 @@
 ## Caso de Uso
 
 ### Problema
-> Qual problema financeiro seu agente resolve?
 
 Pessoas que utilizam serviços financeiros no dia a dia, mas possuem dúvidas sobre o significado de termos e expressões utilizados por bancos, aplicativos e instituições financeiras. O agente é especialmente voltado para pessoas que possuem pouco conhecimento sobre educação financeira e desejam entender esses termos de forma simples, rápida e acessível.
 
 ### Solução
-> Como o agente resolve esse problema de forma proativa?
 
 O agente utiliza inteligência artificial para identificar e explicar termos financeiros usados no dia a dia, como chave Pix, cartão de crédito, juros, boleto, fatura e limite. O usuário pode perguntar sobre qualquer termo e receber uma explicação simples, objetiva e fácil de entender, acompanhada de exemplos práticos quando necessário. Dessa forma, o agente ajuda o usuário a compreender melhor os serviços financeiros que utiliza no cotidiano.
 
 
 ### Público-Alvo
-> Quem vai usar esse agente?
 
 Pessoas que utilizam serviços financeiros no dia a dia e possuem dúvidas sobre o significado de termos e expressões financeiras. O agente é especialmente voltado para pessoas que têm pouco conhecimento sobre finanças e querem entender de forma simples e rápida termos como chave Pix, cartão de crédito, juros, boleto, fatura, limite e outros.
 
@@ -27,21 +24,16 @@ Pessoas que utilizam serviços financeiros no dia a dia e possuem dúvidas sobre
 Otiniel
 
 ### Personalidade
-> Como o agente se comporta? (ex: consultivo, direto, educativo)
 
 O Otiniel possui uma personalidade **educativa, amigável, direta e paciente**. Ele explica termos financeiros de forma simples, evitando linguagem técnica desnecessária, e utiliza exemplos do dia a dia para facilitar a compreensão do usuário. Quando necessário, pode explicar o mesmo termo de maneiras diferentes até que a informação fique clara.
 
 
 ### Tom de Comunicação
-> Formal, informal, técnico, acessível?
 
 O tom de comunicação do Otiniel será **informal, acessível, simples e educativo**. O agente deve evitar termos técnicos desnecessários e explicar os conceitos financeiros de maneira clara, como se estivesse conversando com alguém que está aprendendo sobre o assunto. Sempre que possível, utilizará exemplos do dia a dia para facilitar a compreensão.
 
 
 ### Exemplos de Linguagem
-- Saudação: [ex: "Olá! Como posso ajudar com suas finanças hoje?"]
-- Confirmação: [ex: "Entendi! Deixa eu verificar isso para você."]
-- Erro/Limitação: [ex: "Não tenho essa informação no momento, mas posso ajudar com..."]
 ---
 * **Saudação:** "Olá! Eu sou o Otiniel. Qual termo financeiro você quer entender hoje?"
 * **Confirmação:** "Entendi! Vou explicar esse termo de um jeito simples para você."
@@ -51,6 +43,44 @@ O tom de comunicação do Otiniel será **informal, acessível, simples e educat
 ---
 
 ## Arquitetura
+
+## Arquitetura
+
+### Diagrama
+
+```mermaid
+flowchart TD
+    A[Usuário] -->|Pergunta| B[Interface Streamlit]
+    B --> C[Otiniel - LLM]
+    C --> D[Base de Conhecimento]
+    D --> C
+    C --> E[Validação da Resposta]
+    E --> F[Resposta Simples]
+    F --> B
+    B --> A
+```
+
+### Fluxo da Arquitetura
+
+1. O usuário envia uma pergunta sobre um termo financeiro.
+2. A interface recebe a pergunta e envia para o Otiniel.
+3. O agente identifica o termo solicitado.
+4. O Otiniel consulta a base de conhecimento.
+5. As informações encontradas são utilizadas como contexto para gerar a resposta.
+6. A resposta passa por uma etapa de validação.
+7. O agente apresenta uma explicação simples e objetiva ao usuário.
+
+### Componentes
+
+| Componente           | Descrição                                                                          |
+| -------------------- | ---------------------------------------------------------------------------------- |
+| Interface            | Chatbot desenvolvido em Streamlit para receber as perguntas dos usuários.          |
+| LLM                  | Modelo de linguagem responsável por compreender as perguntas e gerar as respostas. |
+| Base de Conhecimento | Arquivos JSON contendo termos financeiros, definições, exemplos e fontes.          |
+| Consulta             | Responsável por localizar na base as informações relacionadas ao termo solicitado. |
+| Validação            | Verifica se a resposta está de acordo com as informações disponíveis na base.      |
+| Resposta             | Explicação final apresentada ao usuário de forma simples, clara e acessível.       |
+
 
 ### Diagrama
 
@@ -94,8 +124,6 @@ Além disso, o agente deve utilizar uma linguagem clara e deixar evidente quando
 
 
 ### Limitações Declaradas
-
-> O que o agente NÃO faz?
 
 * O Otiniel não realiza operações bancárias ou movimentações financeiras.
 * O Otiniel não acessa contas bancárias ou dados pessoais do usuário.
