@@ -66,4 +66,4 @@ O impacto da solução está em facilitar o acesso à informação e ajudar as p
 
 > Cole aqui o link do seu pitch (YouTube, Loom, Google Drive, etc.)
 
-[Link do vídeo]
+https://youtu.be/gx9cIuCPfYI
