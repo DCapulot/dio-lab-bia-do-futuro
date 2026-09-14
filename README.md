@@ -1,149 +1,84 @@
-# 🤖 Agente Financeiro Inteligente com IA Generativa
+# 💬 Otiniel — Agente Financeiro Educativo
 
-## Contexto
-
-Os assistentes virtuais no setor financeiro estão evoluindo de simples chatbots reativos para **agentes inteligentes e proativos**. Neste desafio, você vai idealizar e prototipar um agente financeiro que utiliza IA Generativa para:
-
-- **Antecipar necessidades** ao invés de apenas responder perguntas
-- **Personalizar** sugestões com base no contexto de cada cliente
-- **Cocriar soluções** financeiras de forma consultiva
-- **Garantir segurança** e confiabilidade nas respostas (anti-alucinação)
-
-> [!TIP]
-> Na pasta [`examples/`](./examples/) você encontra referências de implementação para cada etapa deste desafio.
-
----
-
-## O Que Você Deve Entregar
-
-### 1. Documentação do Agente
-
-Defina **o que** seu agente faz e **como** ele funciona:
-
-- **Caso de Uso:** Qual problema financeiro ele resolve? (ex: consultoria de investimentos, planejamento de metas, alertas de gastos)
-- **Persona e Tom de Voz:** Como o agente se comporta e se comunica?
-- **Arquitetura:** Fluxo de dados e integração com a base de conhecimento
-- **Segurança:** Como evitar alucinações e garantir respostas confiáveis?
-
-📄 **Template:** [`docs/01-documentacao-agente.md`](./docs/01-documentacao-agente.md)
-
----
-
-### 2. Base de Conhecimento
-
-Utilize os **dados mockados** disponíveis na pasta [`data/`](./data/) para alimentar seu agente:
-
-| Arquivo | Formato | Descrição |
-|---------|---------|-----------|
-| `transacoes.csv` | CSV | Histórico de transações do cliente |
-| `historico_atendimento.csv` | CSV | Histórico de atendimentos anteriores |
-| `perfil_investidor.json` | JSON | Perfil e preferências do cliente |
-| `produtos_financeiros.json` | JSON | Produtos e serviços disponíveis |
-
-Você pode adaptar ou expandir esses dados conforme seu caso de uso.
-
-📄 **Template:** [`docs/02-base-conhecimento.md`](./docs/02-base-conhecimento.md)
-
----
-
-### 3. Prompts do Agente
-
-Documente os prompts que definem o comportamento do seu agente:
-
-- **System Prompt:** Instruções gerais de comportamento e restrições
-- **Exemplos de Interação:** Cenários de uso com entrada e saída esperada
-- **Tratamento de Edge Cases:** Como o agente lida com situações limite
-
-📄 **Template:** [`docs/03-prompts.md`](./docs/03-prompts.md)
-
----
-
-### 4. Aplicação Funcional
-
-Desenvolva um **protótipo funcional** do seu agente:
-
-- Chatbot interativo (sugestão: Streamlit, Gradio ou similar)
-- Integração com LLM (via API ou modelo local)
-- Conexão com a base de conhecimento
-
-📁 **Pasta:** [`src/`](./src/)
-
----
-
-### 5. Avaliação e Métricas
-
-Descreva como você avalia a qualidade do seu agente:
-
-**Métricas Sugeridas:**
-- Precisão/assertividade das respostas
-- Taxa de respostas seguras (sem alucinações)
-- Coerência com o perfil do cliente
-
-📄 **Template:** [`docs/04-metricas.md`](./docs/04-metricas.md)
-
----
-
-### 6. Pitch
-
-Grave um **pitch de 3 minutos** (estilo elevador) apresentando:
-
-- Qual problema seu agente resolve?
-- Como ele funciona na prática?
-- Por que essa solução é inovadora?
-
-📄 **Template:** [`docs/05-pitch.md`](./docs/05-pitch.md)
-
----
-
-## Ferramentas Sugeridas
-
-Todas as ferramentas abaixo possuem versões gratuitas:
-
-| Categoria | Ferramentas |
-|-----------|-------------|
-| **LLMs** | [ChatGPT](https://chat.openai.com/), [Copilot](https://copilot.microsoft.com/), [Gemini](https://gemini.google.com/), [Claude](https://claude.ai/), [Ollama](https://ollama.ai/) |
-| **Desenvolvimento** | [Streamlit](https://streamlit.io/), [Gradio](https://www.gradio.app/), [Google Colab](https://colab.research.google.com/) |
-| **Orquestração** | [LangChain](https://www.langchain.com/), [LangFlow](https://www.langflow.org/), [CrewAI](https://www.crewai.com/) |
-| **Diagramas** | [Mermaid](https://mermaid.js.org/), [Draw.io](https://app.diagrams.net/), [Excalidraw](https://excalidraw.com/) |
-
----
+Agente de IA generativa que explica termos financeiros do dia a dia (Pix, cartão
+de crédito, juros, boleto, investimentos básicos etc.) de forma simples, direta
+e sem inventar informações. Projeto desenvolvido para o desafio **Agente
+Financeiro Inteligente com IA Generativa**.
 
 ## Estrutura do Repositório
 
 ```
-📁 lab-agente-financeiro/
+otiniel/
+├── README.md
 │
-├── 📄 README.md
+├── docs/                          # Documentação do projeto (as 6 entregas)
+│   ├── 01-documentacao-agente.md  # Caso de uso, persona, arquitetura, segurança
+│   ├── 02-base-conhecimento.md    # Estratégia de dados
+│   ├── 03-prompts.md              # System prompt + exemplos + edge cases
+│   ├── 04-metricas.md             # Avaliação e métricas
+│   └── 05-pitch.md                # Roteiro do pitch (3 min)
 │
-├── 📁 data/                          # Dados mockados para o agente
-│   ├── historico_atendimento.csv     # Histórico de atendimentos (CSV)
-│   ├── perfil_investidor.json        # Perfil do cliente (JSON)
-│   ├── produtos_financeiros.json     # Produtos disponíveis (JSON)
-│   └── transacoes.csv                # Histórico de transações (CSV)
+├── data/                          # Base de conhecimento
+│   ├── termos_financeiros.json    # ✅ usado pelo Otiniel (definições)
+│   ├── exemplos_financeiros.json  # ✅ usado pelo Otiniel (exemplos práticos)
+│   ├── fontes.json                # ✅ usado pelo Otiniel (fontes por categoria)
+│   ├── perfil_investidor.json     # dado mockado original (não usado no MVP)
+│   ├── produtos_financeiros.json  # dado mockado original (não usado no MVP)
+│   ├── transacoes.csv             # dado mockado original (não usado no MVP)
+│   └── historico_atendimento.csv  # dado mockado original (não usado no MVP)
 │
-├── 📁 docs/                          # Documentação do projeto
-│   ├── 01-documentacao-agente.md     # Caso de uso e arquitetura
-│   ├── 02-base-conhecimento.md       # Estratégia de dados
-│   ├── 03-prompts.md                 # Engenharia de prompts
-│   ├── 04-metricas.md                # Avaliação e métricas
-│   └── 05-pitch.md                   # Roteiro do pitch
+├── src/                           # Aplicação funcional (Streamlit)
+│   ├── app.py                     # Interface do chat
+│   ├── agente.py                  # Busca na base + chamada ao modelo
+│   ├── prompts.py                 # System prompt do Otiniel
+│   ├── config.py                  # Variáveis de ambiente
+│   ├── requirements.txt
+│   └── .env.example
 │
-├── 📁 src/                           # Código da aplicação
-│   └── app.py                        # (exemplo de estrutura)
-│
-├── 📁 assets/                        # Imagens e diagramas
-│   └── ...
-│
-└── 📁 examples/                      # Referências e exemplos
-    └── README.md
+├── assets/                        # Diagramas, prints, roteiro dos vídeos
+└── examples/                      # Referências do desafio original
 ```
 
----
+## Por que só parte dos dados mockados é usada?
 
-## Dicas Finais
+O repositório original trazia dados voltados para um agente de
+**aconselhamento personalizado** (transações, perfil de investidor, produtos).
+Como o caso de uso escolhido — o Otiniel — foi redefinido para **explicar
+termos financeiros** (e não dar recomendações), os arquivos realmente usados
+pelo agente são os três novos em `data/`: `termos_financeiros.json`,
+`exemplos_financeiros.json` e `fontes.json`. Os quatro arquivos originais
+foram mantidos no repositório (para não perder a entrega) mas não são
+consultados no MVP atual — ficam como uma extensão futura possível (ver
+"Próximos passos" abaixo).
 
-1. **Comece pelo prompt:** Um bom system prompt é a base de um agente eficaz
-2. **Use os dados mockados:** Eles garantem consistência e evitam problemas com dados sensíveis
-3. **Foque na segurança:** No setor financeiro, evitar alucinações é crítico
-4. **Teste cenários reais:** Simule perguntas que um cliente faria de verdade
-5. **Seja direto no pitch:** 3 minutos passam rápido, vá ao ponto
+## Como rodar
+
+```bash
+cd src
+cp .env.example .env        # depois edite e cole sua ANTHROPIC_API_KEY
+pip install -r requirements.txt
+streamlit run app.py
+```
+
+Você pode conseguir uma chave de API em https://console.anthropic.com/.
+Se preferir usar outro provedor (OpenAI, Gemini), basta trocar a chamada
+dentro de `src/agente.py`.
+
+## Como o agente funciona (resumo)
+
+1. O usuário faz uma pergunta no chat.
+2. `agente.py` procura, por palavra-chave, quais termos da base
+   (`termos_financeiros.json`) aparecem na pergunta.
+3. Se encontrar, monta um bloco de contexto com definição + exemplo + fonte
+   e envia isso, junto com o `system prompt`, para o modelo.
+4. Se **não** encontrar nenhum termo correspondente, o agente é instruído a
+   admitir a limitação em vez de inventar uma resposta (anti-alucinação).
+
+## Próximos passos (não implementados no MVP)
+
+- Usar `perfil_investidor.json` e `produtos_financeiros.json` para uma segunda
+  funcionalidade opcional: sugerir *qual produto combina com o perfil* do
+  cliente (sempre deixando claro que não é uma recomendação de investimento).
+- Trocar a busca por palavra-chave por busca semântica (embeddings) para
+  lidar melhor com perguntas escritas de formas diferentes.
+- Adicionar métricas de observabilidade (latência, tokens, taxa de erro).
