@@ -2,6 +2,7 @@
 
 > [!TIP]
 > Você pode usar alguns slides para apoiar no seu Pitch e mostrar sua solução na prática.
+
 > Slide: https://docs.google.com/presentation/d/1Vez3lJW3aRLis2YkbVxPqN1TAvVL3waZruoytcPnjkg/edit?usp=sharing
 
 ## Roteiro Sugerido
