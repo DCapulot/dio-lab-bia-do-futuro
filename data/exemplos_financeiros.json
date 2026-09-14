@@ -1,0 +1,54 @@
+[
+  {
+    "termo": "Pix",
+    "exemplo": "Maria quer devolver R$ 20 para uma amiga. Em vez de sacar dinheiro, ela abre o aplicativo do banco, faz um Pix e o dinheiro cai na conta da amiga em segundos."
+  },
+  {
+    "termo": "Chave Pix",
+    "exemplo": "Uma pessoa pode cadastrar seu número de telefone como chave Pix, assim quem for enviar dinheiro só precisa digitar esse número, sem saber agência e conta."
+  },
+  {
+    "termo": "Cartão de Crédito",
+    "exemplo": "Se você compra um tênis de R$ 300 no cartão de crédito, esse valor entra na fatura do mês e deve ser pago até a data de vencimento, à vista ou parcelado."
+  },
+  {
+    "termo": "Cartão de Débito",
+    "exemplo": "Ao pagar um lanche de R$ 25 no débito, esse valor é descontado imediatamente do saldo disponível na conta."
+  },
+  {
+    "termo": "Juros",
+    "exemplo": "Se uma fatura de R$ 500 não for paga até o vencimento, na próxima cobrança pode vir um valor maior, por causa dos juros de atraso."
+  },
+  {
+    "termo": "Limite",
+    "exemplo": "Se o limite do cartão é R$ 1.000, a pessoa pode gastar até esse valor no cartão antes de precisar pagar a fatura."
+  },
+  {
+    "termo": "Fatura",
+    "exemplo": "No fim do mês, todas as compras feitas no cartão de crédito aparecem juntas na fatura, com o valor total e a data para pagamento."
+  },
+  {
+    "termo": "Boleto",
+    "exemplo": "Para pagar a mensalidade da academia, a pessoa recebe um boleto com código de barras e paga pelo aplicativo do banco antes do vencimento."
+  },
+  {
+    "termo": "Saldo",
+    "exemplo": "Se uma conta tem R$ 200 de saldo e a pessoa recebe R$ 100 de salário, o saldo passa a ser R$ 300."
+  },
+  {
+    "termo": "Parcelamento",
+    "exemplo": "Uma compra de R$ 600 pode ser parcelada em 6 vezes de R$ 100 no cartão de crédito."
+  },
+  {
+    "termo": "Reserva de Emergência",
+    "exemplo": "João guarda parte do salário todo mês em um investimento de baixo risco para ter dinheiro disponível caso perca o emprego ou tenha uma despesa inesperada."
+  },
+  {
+    "termo": "Tesouro Selic",
+    "exemplo": "Uma pessoa que está começando a investir pode aplicar R$ 30 no Tesouro Selic para formar sua reserva de emergência com segurança."
+  },
+  {
+    "termo": "CDB",
+    "exemplo": "Um CDB que rende 102% do CDI significa que, para cada R$ 100 investidos, o retorno acompanha de perto a taxa CDI do período."
+  }
+]

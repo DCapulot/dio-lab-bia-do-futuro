@@ -1,0 +1,27 @@
+[
+  {
+    "categoria": "pagamentos",
+    "fonte": "Banco Central do Brasil - Perguntas Frequentes sobre o Pix",
+    "url": "https://www.bcb.gov.br/estabilidadefinanceira/pix"
+  },
+  {
+    "categoria": "cartoes",
+    "fonte": "Banco Central do Brasil - Cartões de Crédito e Débito",
+    "url": "https://www.bcb.gov.br/meubolsonobolso/cartoes"
+  },
+  {
+    "categoria": "investimentos",
+    "fonte": "Tesouro Nacional - Tesouro Direto",
+    "url": "https://www.tesourodireto.com.br/"
+  },
+  {
+    "categoria": "investimentos",
+    "fonte": "Comissão de Valores Mobiliários (CVM) - Educação Financeira",
+    "url": "https://www.gov.br/investidor/pt-br"
+  },
+  {
+    "categoria": "conceitos_gerais",
+    "fonte": "Banco Central do Brasil - Cidadania Financeira",
+    "url": "https://www.bcb.gov.br/cidadaniafinanceira"
+  }
+]

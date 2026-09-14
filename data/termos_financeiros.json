@@ -1,0 +1,98 @@
+[
+  {
+    "termo": "Pix",
+    "sinonimos": ["pix"],
+    "definicao": "O Pix é um meio de pagamento instantâneo criado pelo Banco Central do Brasil. Ele permite transferir ou receber dinheiro em poucos segundos, a qualquer hora do dia, todos os dias da semana.",
+    "categoria": "pagamentos"
+  },
+  {
+    "termo": "Chave Pix",
+    "sinonimos": ["chave pix"],
+    "definicao": "A chave Pix é um identificador usado para receber ou enviar dinheiro pelo Pix, sem precisar informar dados como agência e conta. Pode ser um CPF/CNPJ, e-mail, número de telefone ou uma chave aleatória.",
+    "categoria": "pagamentos"
+  },
+  {
+    "termo": "Cartão de Crédito",
+    "sinonimos": ["cartao de credito", "credito"],
+    "definicao": "É um meio de pagamento que permite comprar agora e pagar depois, usando um limite disponibilizado pela instituição financeira. O valor das compras é somado em uma fatura, que deve ser paga até a data de vencimento.",
+    "categoria": "cartoes"
+  },
+  {
+    "termo": "Cartão de Débito",
+    "sinonimos": ["cartao de debito", "debito"],
+    "definicao": "É um meio de pagamento em que o valor da compra é descontado na hora, diretamente do saldo disponível na conta do cliente.",
+    "categoria": "cartoes"
+  },
+  {
+    "termo": "Juros",
+    "sinonimos": ["juro"],
+    "definicao": "Juros são valores cobrados pelo uso do dinheiro durante um período de tempo. Aparecem, por exemplo, em empréstimos, financiamentos ou quando uma conta é paga com atraso.",
+    "categoria": "conceitos_gerais"
+  },
+  {
+    "termo": "Limite",
+    "sinonimos": ["limite de credito", "limite do cartao"],
+    "definicao": "É o valor máximo que uma pessoa pode utilizar em um cartão de crédito ou em uma conta, disponibilizado pela instituição financeira conforme a análise de crédito do cliente.",
+    "categoria": "cartoes"
+  },
+  {
+    "termo": "Fatura",
+    "sinonimos": ["fatura do cartao"],
+    "definicao": "É o documento que reúne todas as compras feitas no cartão de crédito em um período, mostrando o valor total a pagar e a data de vencimento.",
+    "categoria": "cartoes"
+  },
+  {
+    "termo": "Boleto",
+    "sinonimos": ["boleto bancario"],
+    "definicao": "É um documento usado para realizar pagamentos, que pode ser quitado em bancos, casas lotéricas, aplicativos ou internet banking. Contém informações como valor, vencimento e código de barras.",
+    "categoria": "pagamentos"
+  },
+  {
+    "termo": "Saldo",
+    "sinonimos": [],
+    "definicao": "É o valor disponível em uma conta em determinado momento, resultado da diferença entre entradas (depósitos, recebimentos) e saídas (gastos, pagamentos).",
+    "categoria": "conceitos_gerais"
+  },
+  {
+    "termo": "Parcelamento",
+    "sinonimos": ["parcelado", "parcelas"],
+    "definicao": "É a divisão do valor de uma compra ou dívida em várias partes (parcelas), pagas ao longo do tempo, podendo ou não haver cobrança de juros dependendo da condição contratada.",
+    "categoria": "conceitos_gerais"
+  },
+  {
+    "termo": "Reserva de Emergência",
+    "sinonimos": ["reserva de emergencia"],
+    "definicao": "É uma quantia guardada para cobrir imprevistos, como perda de renda ou despesas inesperadas, geralmente aplicada em investimentos de baixo risco e fácil acesso.",
+    "categoria": "investimentos"
+  },
+  {
+    "termo": "Tesouro Selic",
+    "sinonimos": ["tesouro direto"],
+    "definicao": "É um título público de renda fixa, considerado de baixo risco, que rende de acordo com a taxa Selic. É indicado para reserva de emergência e para quem está começando a investir.",
+    "categoria": "investimentos"
+  },
+  {
+    "termo": "CDB",
+    "sinonimos": ["certificado de deposito bancario"],
+    "definicao": "O CDB (Certificado de Depósito Bancário) é um investimento de renda fixa em que o cliente empresta dinheiro ao banco em troca de uma remuneração, geralmente um percentual do CDI.",
+    "categoria": "investimentos"
+  },
+  {
+    "termo": "LCI/LCA",
+    "sinonimos": ["lci", "lca"],
+    "definicao": "LCI (Letra de Crédito Imobiliário) e LCA (Letra de Crédito do Agronegócio) são investimentos de renda fixa isentos de Imposto de Renda para pessoa física, geralmente com prazo mínimo de carência.",
+    "categoria": "investimentos"
+  },
+  {
+    "termo": "Renda Fixa",
+    "sinonimos": [],
+    "definicao": "É uma categoria de investimentos em que as regras de rentabilidade são definidas no momento da aplicação, como um percentual do CDI ou da Selic, oferecendo mais previsibilidade e, em geral, menor risco.",
+    "categoria": "investimentos"
+  },
+  {
+    "termo": "Perfil de Investidor",
+    "sinonimos": ["perfil investidor", "suitability"],
+    "definicao": "É a classificação que indica a tolerância de uma pessoa a riscos em investimentos, geralmente dividida em conservador, moderado e arrojado. Ajuda a orientar quais tipos de produtos combinam mais com cada pessoa.",
+    "categoria": "investimentos"
+  }
+]
